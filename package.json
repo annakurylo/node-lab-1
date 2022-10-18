@@ -1,32 +1,35 @@
 {
-  "name": "lab-1-1",
-  "version": "1.0.0",
-  "description": "lab1",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ignore-path .gitignore",
-    "lint:fix": "npm run lint -- --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/annakurylo/node-lab-1.git"
-  },
-  "keywords": [
-    "lab"
-  ],
-  "author": "annakurylo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/annakurylo/node-lab-1/issues"
-  },
-  "homepage": "https://github.com/annakurylo/node-lab-1#readme",
-  "devDependencies": {
-    "eslint": "^8.25.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.3.0",
-    "eslint-plugin-promise": "^6.1.0"
-  }
+    "name": "lab-1-1",
+    "version": "1.0.0",
+    "description": "lab1",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint --ignore-path .gitignore",
+        "lint:fix": "npm run lint -- --fix",
+        "format": "prettier --ignore-path .gitignore --check .",
+        "format:fix": "prettier --ignore-path .gitignore --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/annakurylo/node-lab-1.git"
+    },
+    "keywords": [
+        "lab"
+    ],
+    "author": "annakurylo",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/annakurylo/node-lab-1/issues"
+    },
+    "homepage": "https://github.com/annakurylo/node-lab-1#readme",
+    "devDependencies": {
+        "eslint": "^8.25.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-n": "^15.3.0",
+        "eslint-plugin-promise": "^6.1.0",
+        "prettier": "2.7.1"
+    }
 }
