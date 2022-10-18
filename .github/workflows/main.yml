@@ -6,8 +6,8 @@ jobs:
     deploy_lambda:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
-            - uses: actions/setup-node@v3
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2
               with:
                   node-version: '16'
             - name: Configure AWS Credentials
@@ -24,5 +24,5 @@ jobs:
             - name: deploy
               run: |
                   npx ncc build index.js
-                  npx npm-pack-zip
-                  aws lambda update-function-code --function-name=lambda-function --zip-file=fileb://lab-1-1.zip
+                  zip -j deploy.zip ./dist/*
+                  aws lambda update-function-code --function-name=lambda-function --zip-file=fileb://deploy.zip
